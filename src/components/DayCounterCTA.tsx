@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import {DayCounterProps} from "../types";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+interface DayCounterProps {
+    startDateIso: string;
+    label: string;
+}
 
-export const DayCounterCTA: React.FC<DayCounterProps> = ({startDateIso, endDateIso}) => {
+const DayCounterCTA: React.FC<DayCounterProps> = ({ startDateIso, label }) => {
     const [daysPassed, setDaysPassed] = useState<number>(0);
 
     useEffect(() => {
@@ -23,16 +24,19 @@ export const DayCounterCTA: React.FC<DayCounterProps> = ({startDateIso, endDateI
 
         const interval = setInterval(calculateDays, 3600000);
         return () => clearInterval(interval);
-    }, [startDateIso, endDateIso]);
+    }, [startDateIso]);
+
     return (
-        <div
-            className="d-grid gap-2 d-md-block">
-            <div
-                className={"button"}
-                 onLoad={() => window.location.href = '/'}>
-               <p> EVERYDAY, TONY (Teshome) IS GRATEFUL FOR ALL OF THE DAYS HE WAKES UP, AND FOR EVERY BREATH HE TAKES EVERY MINUTE OF THE DAY!
-                   <span className="fw-bold">{daysPassed}</span></p>
-            </div>
+        <div className="d-grid gap-2 d-md-block">
+            <button
+                className="btn btn-primary btn-lg shadow-sm"
+                type="button"
+                onClick={() => window.location.href = '#booking'} // Example CTA action
+            >
+                <span className="fw-bold">{label}:</span> {daysPassed} Days
+            </button>
         </div>
     );
 };
+
+export default DayCounterCTA;

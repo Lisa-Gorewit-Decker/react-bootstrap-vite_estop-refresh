@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Getting Started with Vite and TS",
+      "body": "Vite makes React development incredibly fast!"
+    },
+    {
+      "id": "2",
+      "title": "Bootstrap Styling",
+      "body": "Using utilities makes responsive design a breeze."
+    }
+  ]
+}

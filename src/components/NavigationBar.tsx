@@ -1,31 +1,34 @@
-//NavigationBar //
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
 
-import React from 'react';
-import {Navbar, Nav, Container} from 'react-bootstrap';
-import {Link} from "react-router-dom";
+export const NavigationBar: React.FC = () => {
+    return (
+        <Navbar bg="dark" variant="dark" expand="lg" className="py-3">
+            <Container>
+                <Link to="/" className="navbar-brand fw-bold text-danger text-decoration-none">
+                    ESTOP DRIVING SCHOOL
+                </Link>
 
-export const NavigationBar: React.FC = () => (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-        <Container>
-            <Navbar.Brand as={Link} to="/" className="fw-bold">ESTOP <span className="text-danger fw-bold">DRIVING SCHOOL</span></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ms-auto">
-                    <Nav.Link as={Link} to="/">Home</Nav.Link>
-                    <Nav.Link as={Link} to="/about">About</Nav.Link>
-                    <Nav.Link as={Link} to="/testimonials">Testimonials</Nav.Link>
-                    <Nav.Link as={Link} to="/services">Services</Nav.Link>
-                    <Nav.Link as={Link} to="/schedule">Schedule</Nav.Link>
-                    <Nav.Link as={Link} to="/contact" className="btn btn-danger text-white ms-lg-2">Book Now</Nav.Link>
-                    <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-        </Container>
-    </Navbar>
-);
-
-
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="ms-auto align-items-center gap-3">
+                        <Nav.Link as={Link} to="/">HOME</Nav.Link>
+                        <Nav.Link as={Link} to="/about">ABOUT</Nav.Link>
+                        <Nav.Link as={Link} to="/packages">PACKAGES</Nav.Link>
+                        <Nav.Link as={Link} to="/schedule">SCHEDULE</Nav.Link>
+                        <Nav.Link as={Link} to="/services">SERVICES</Nav.Link>
+                        <Nav.Link as={Link} to="/pricing-table">PRICING</Nav.Link>
+                        <Nav.Link as={Link} to="/testimonials">TESTIMONIALS</Nav.Link>
+                        <Nav.Link as={Link} to="/blog">BLOG</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    );
+};
 export default NavigationBar;

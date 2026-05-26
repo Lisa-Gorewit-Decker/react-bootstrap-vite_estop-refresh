@@ -1,94 +1,74 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-import React, {FC} from 'react';
-
-const Footer: FC = () => {
-    const currentYear = new Date().getFullYear();
-
-    const socialLinks = {
-        facebook: "https://www.facebook.com/estopdrivingschool/#!",
-        instagram: "https://www.facebook.com/estopdrivingschool/#!",
-        yelp: "#!",
-        twitter: "#!"
-    };
-
+const Footer = () => {
     return (
-        <footer className="bg-dark text-white pt-5 pb-3 mt-auto border-top border-danger border-4">
-            <div className="container">
-                <div className="row gy-4">
-
-                    <div className="col-lg-4 col-md-6">
-                        <h5 className="text-uppercase fw-bold mb-3">
-                            eStop <span className="text-danger">Driving School</span>
-                        </h5>
-                        <p className="small text-secondary">
-                            "Speak STOP Fluently and Flawlessly For Life!" <br/>
-                            Providing expert behind-the-wheel instruction in Marin and Sonoma County since 1983.
+        <footer className="bg-dark text-light pt-5 pb-3 mt-auto">
+            <Container>
+                <Row className="gy-4">
+                    <Col lg={4}>
+                        {/* Swapped text-primary to text-danger to match your main header branding */}
+                        <h5 className="text-danger fw-bold mb-3">E-STOP DRIVING SCHOOL</h5>
+                        <p className="text-white-50">
+                            Providing top-tier driver education for over 15 years. Safe roads start with professional training.
                         </p>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-2 col-md-6">
-                        <h6 className="text-uppercase fw-bold mb-3 small">RESOURCES</h6>
-                        <ul className="list-unstyled small">
-                            <li className="mb-2">
-                                <a href="/sitemap"
-                                   className="text-secondary text-decoration-none hover-white">SITEMAP</a>
+                    <Col lg={2} md={4}>
+                        <h6 className="fw-bold mb-3 text-white">Quick Links</h6>
+                        <ul className="list-unstyled d-flex flex-column gap-2">
+                            <li>
+                                <Link to="/services" className="text-white-50 text-decoration-none link-danger">
+                                    Packages
+                                </Link>
                             </li>
-                            <li className="mb-2">
-                                <a href="/privacy-policy" className="text-secondary text-decoration-none hover-white">PRIVACY
-                                    POLICY</a>
+                            <li>
+                                <Link to="/schedule" className="text-white-50 text-decoration-none link-danger">
+                                    Schedule
+                                </Link>
                             </li>
-                            <li className="mb-2">
-                                <a href="/terms" className="text-secondary text-decoration-none hover-white">TERMS OF
-                                    SERVICE</a>
+                            <li>
+                                <Link to="/blog" className="text-white-50 text-decoration-none link-danger">
+                                    Driving Tips
+                                </Link>
                             </li>
                         </ul>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6">
-                        <h6 className="text-uppercase fw-bold mb-3 small">Contact Us</h6>
-                        <ul className="list-unstyled small text-secondary">
-                            <li className="mb-2">
-                                <i className="bi bi-geo-alt-fill text-danger me-2"></i>
-                                Novato, CA 94945
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-telephone-fill text-danger me-2"></i>
-                                415-897-7002
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-chat-dots-fill text-danger me-2"></i>
-                                Text Friendly!
-                            </li>
+                    <Col lg={3} md={4}>
+                        <h6 className="fw-bold mb-3 text-white">Contact Us</h6>
+                        <ul className="list-unstyled text-white-50 d-flex flex-column gap-2">
+                            <li><i className="bi bi-geo-alt me-2 text-danger"></i>123 Roadway Ave, Suite 4</li>
+                            <li>New Jersey, NJ 07001</li>
+                            <li><i className="bi bi-envelope me-2 text-danger"></i>info@estopdriving.com</li>
                         </ul>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6 text-center text-lg-start">
-                        <h6 className="text-uppercase fw-bold mb-3 small">Connect With Tony</h6>
-                        <div className="d-flex justify-content-center justify-content-lg-start gap-3">
-                            <a href={socialLinks.facebook} className="btn btn-outline-light btn-sm rounded-circle">
-                                <i className="bi bi-facebook"></i>
-                            </a>
-                            <a href={socialLinks.instagram} className="btn btn-outline-light btn-sm rounded-circle">
-                                <i className="bi bi-instagram"></i>
-                            </a>
-                            <a href={socialLinks.yelp} className="btn btn-outline-light btn-sm rounded-circle">
-                                <i className="bi bi-yelp"></i>
-                            </a>
-                        </div>
+                    <Col lg={3} md={4}>
+                        <h6 className="fw-bold mb-3 text-white">Hours</h6>
+                        <ul className="list-unstyled text-white-50 d-flex flex-column gap-1">
+                            <li>Mon - Fri: 8am - 6pm</li>
+                            <li>Sat: 9am - 4pm</li>
+                            <li>Sun: Closed</li>
+                        </ul>
+                    </Col>
+                </Row>
+
+                <hr className="my-4 border-secondary opacity-25" />
+
+                <div className="d-flex justify-content-between align-items-center flex-column flex-md-row text-white-50 small">
+                    <p className="mb-0">© {new Date().getFullYear()} E-Stop Driving School. All rights reserved.</p>
+                    <div className="d-flex gap-3 mt-2 mt-md-0">
+                        <Link to="/privacy-policy" className="text-white-50 text-decoration-none link-danger">
+                            Privacy Policy
+                        </Link>
+                        <Link to="/terms-of-service" className="text-white-50 text-decoration-none link-danger">
+                            Terms of Service
+                        </Link>
                     </div>
                 </div>
-
-                <hr className="mt-4 mb-3 border-secondary opacity-25"/>
-                <div className="row">
-                    <div className="col-12 text-center">
-                        <p className="x-small text-secondary mb-0 footer-copy">
-                            &copy;{currentYear} eStop Driving School. All Rights Reserved. Developed For The Safety of
-                        </p>
-                    </div>
-                </div>
-            </div>
+            </Container>
         </footer>
     );
 };

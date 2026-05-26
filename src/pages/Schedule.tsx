@@ -1,7 +1,7 @@
-//Schedule.tsx
+
 import React from 'react';
 import {Container} from 'react-bootstrap';
-
+import Button from 'react-bootstrap/Button';
 import '../types';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -37,14 +37,14 @@ const Schedule: React.FC = () => {
                             allow="calendar">
                         </iframe>
                         <p><br/></p>
-                        <button
+                        <Button
                             type="submit"
                             className="btn btn-danger btn-lg fw-bold"
                             style={{textAlign: 'center'}}
                             onClick={() => window.location.href = '/contact'}>
                             QUESTIONS?<br/>
                             CONTACT US!
-                        </button>
+                        </Button>
                         <p><br/></p>
                     </div>
 
@@ -54,5 +54,4 @@ const Schedule: React.FC = () => {
         </div>
     );
 };
-
 export default Schedule;

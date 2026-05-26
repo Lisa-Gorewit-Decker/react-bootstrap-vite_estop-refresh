@@ -1,4 +1,4 @@
-//Contact.tsx//
+//Contact.tsx
 import React, { FC, useState, ChangeEvent, SubmitEvent } from 'react';
 import { Container } from 'react-bootstrap';
 import { ContactState } from "../types";
@@ -29,11 +29,7 @@ const Contact: FC = () => {
 
     const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const {id, value} = e.target;
-        setFormData(any);
-
-        function any(prev: any) {
-            return {...prev, [id]: value};
-        }
+        setFormData(prev => ({...prev, [id]: value}));
     };
     const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -62,7 +58,7 @@ const Contact: FC = () => {
                     <div className="row g-5">
                         <div className="col-lg-5">
                             <h2 className="text-3xl font-bold text-red-600 mb-4">
-                                LET'S GET YOU LICENSED</h2>
+                                LET&rsquo;S GET YOU LICENSED</h2>
                             <p className="lead mb-5 text-secondary">
                                 Have Questions About Teen Permits or Adult Brush-Up Lessons? Send a Message or Call Tony
                                 Directly.

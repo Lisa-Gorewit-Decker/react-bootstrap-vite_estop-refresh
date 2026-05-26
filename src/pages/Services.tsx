@@ -1,11 +1,8 @@
-//Services.tsx//
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-// import { DrivingService } from '../types';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
 
 const DrivingService: React.FC = () => {
     return (
@@ -13,45 +10,44 @@ const DrivingService: React.FC = () => {
             <div className="bg-light">
                 <Container className="py-5">
                     <h1 className="display-3 fw-bold mb-3">
-                        OUR <span
-                        className="text-danger">
-                        SERVICES.
+                        OUR<span
+                        className="text-danger"> SERVICES.
                     </span>
                     </h1>
                     <p className="lead text-muted mb-4" style={{maxWidth: '700px'}}>
-                        Whether You're a first-time driver or looking to refresh your skills,
-                        we provide tailored instruction to ensure you're road-ready.
+                        Whether You&rsquo;re a first-time driver or looking to refresh your skills,
+                        we provide tailored instruction to ensure you&rsquo;re road-ready.
                     </p>
                 </Container>
             </div>
             <Container className="py-5">
                 <Row className="g-4">
-                    <Col md={4}>
-                        <div className="mb-3 text-danger">
+                    <Col md={3}>
+                        <div className="mb-3 text-danger text-uppercase">
                             <i className="bi bi-shield-check" style={{fontSize: '1.5rem'}}></i>
                         </div>
-                        <h5 className="fw-bold text-uppercase small tracking-widest">Safety First</h5>
+                        <h5 className="fw-bold text-uppercase small tracking-widest">SAFETY FIRST</h5>
                         <p className="text-muted small">Dual-Control Vehicles & Certified Instructor.</p>
                     </Col>
-                    <Col md={4}>
-                        <div className="mb-3 text-danger">
+                    <Col md={3}>
+                        <div className="mb-3 text-danger text-uppercase">
                             <i className="bi bi-geo-alt" style={{fontSize: '1.5rem'}}></i>
                         </div>
-                        <h5 className="fw-bold text-uppercase small tracking-widest">FREE PICKUP</h5>
+                        <h5 className="fw-bold text-uppercase text-center">FREE PICKUP</h5>
                         <p className="text-muted small">We Start and End Your Lesson at Your Doorstep.</p>
                     </Col>
-                    <Col md={4}>
-                        <div className="mb-3 text-danger">
+                    <Col md={3}>
+                        <div className="mb-3 text-danger text-uppercase">
                             <i className="bi bi-calendar-event" style={{fontSize: '1.5rem'}}></i>
                         </div>
-                        <h5 className="fw-bold text-uppercase small tracking-widest">FLEXIBLE</h5>
+                        <h5 className="fw-bold text-uppercase text-center">FLEXIBLE SCHEDULE</h5>
                         <p className="text-muted small">7 Days a Week, Including Evenings.</p>
                     </Col>
-                    <Col md={4}>
-                        <div className="mb-3 text-danger">
+                    <Col md={3}>
+                        <div className="mb-3 text-danger text-uppercase">
                             <i className="bi bi-award" style={{fontSize: '1.5rem'}}></i>
                         </div>
-                        <h5 className="fw-bold text-uppercase small tracking-widest">Licensed</h5>
+                        <h5 className="fw-bold text-uppercase text-center">LICENSED</h5>
                         <p className="text-muted small">Fully bonded and state-certified school.</p>
                     </Col>
                 </Row>
@@ -63,19 +59,19 @@ const DrivingService: React.FC = () => {
                             <span className="text-danger">TRAINING</span>
                         </h2>
                         <p className="text-muted mb-4">
-                            Our primary focus is hands-on experience. We don't just teach you how to pass the test;
-                            we teach you how to survive on today's busy roads. From parallel parking to
+                            Our primary focus is hands-on experience. We don&rsquo;t just teach you how to pass the test;
+                            we teach you how to survive on today&rsquo;s busy roads. From parallel parking to
                             high-speed merging, our curriculum covers it all.
                         </p>
                         <ul className="list-unstyled">
-                            <li className="mb-2"><i className="bi bi-check-lg text-danger me-2"></i> Defensive Driving
+                            <li className="mb-2"><i className="bi bi-check-lg text-danger text-uppercase me-2"></i> Defensive Driving
                                 Techniques
                             </li>
-                            <li className="mb-2"><i className="bi bi-check-lg text-danger me-2"></i> Freeway and canyon
-                                driving
+                            <li className="mb-2"><i className="bi bi-check-lg text-danger text-uppercase me-2"></i> Freeway and Canyon
+                                Driving.
                             </li>
-                            <li className="mb-2"><i className="bi bi-check-lg text-danger me-2"></i> Preparation for the
-                                DMV drive test
+                            <li className="mb-2"><i className="bi bi-check-lg text-danger text-uppercase me-2"></i> Preparation For the
+                               California DMV Drive Test.
                             </li>
                         </ul>
                     </Col>
@@ -91,8 +87,8 @@ const DrivingService: React.FC = () => {
             <div className="bg-white py-5">
                 <Container>
                     <div className="text-center mb-5">
-                        <h2 className="display-4 fw-bold">
-                            <span className={"text-danger"}>SIMPLE RATES</span> AT ESTOP DRIVING SCHOOL</h2>
+                        <h2 className="display-4 fw-bold text-center">
+                            <span className="text-danger">SIMPLE RATES</span><span className="font-family:'Overpass',sans-serif; color:#000">AT ESTOP DRIVING SCHOOL</span></h2>
                         <p className="text-muted">Professional, Valet Driving Instruction Starting at Your Front
                             Door.</p>
                     </div>
@@ -107,16 +103,16 @@ const DrivingService: React.FC = () => {
                                     </div>
                                     <ul className="list-unstyled text-start mb-5 flex-grow-1 px-3">
                                         <li className="mb-3 small"><i
-                                            className="bi bi-check-circle-fill text-danger me-2"></i> Certificate of
-                                            Completion
+                                            className="bi bi-check-circle-fill text-danger text-uppercase me-2"></i> Certificate of
+                                            Completion.
                                         </li>
                                         <li className="mb-3 small"><i
-                                            className="bi bi-check-circle-fill text-danger me-2"></i> DMV Test
-                                            Preparation
+                                            className="bi bi-check-circle-fill text-danger text-uppercase me-2"></i> DMV Test
+                                            Preparation.
                                         </li>
                                         <li className="mb-3 small"><i
-                                            className="bi bi-check-circle-fill text-danger me-2"></i> Valet Pick-up &
-                                            Drop-off
+                                            className="bi bi-check-circle-fill text-danger text-uppercase me-2"></i> Valet Pick-up &
+                                            Drop-off.
                                         </li>
                                     </ul>
                                     <Button variant="dark" className="rounded-pill py-3 fw-bold text-uppercase">Book
@@ -139,21 +135,22 @@ const DrivingService: React.FC = () => {
                                     </div>
                                     <ul className="list-unstyled text-start mb-5 flex-grow-1 px-3">
                                         <li className="mb-3 small"><i
-                                            className="bi bi-check-circle-fill text-danger me-2"></i> Nervous Driver
-                                            Specialist
+                                            className="bi bi-check-circle-fill text-danger me-2"></i>
+                                            Nervous Driver Specialist
                                         </li>
                                         <li className="mb-3 small"><i
-                                            className="bi bi-check-circle-fill text-danger me-2"></i> Freeway & City
-                                            Training
+                                            className="bi bi-check-circle-fill text-danger me-2"></i>
+                                            Freeway & City Training
                                         </li>
                                         <li className="mb-3 small"><i
-                                            className="bi bi-check-circle-fill text-danger me-2"></i> One-on-One
-                                            Instruction
+                                            className="bi bi-check-circle-fill text-danger me-2"></i>
+                                            One-on-One Instruction
                                         </li>
                                     </ul>
                                     <Button variant="warning"
-                                            className="rounded-pill py-3 fw-bold text-uppercase text-dark">Book
-                                        Adults</Button>
+                                            className="rounded-pill py-3 fw-bold text-uppercase text-dark">
+                                        Book Adults
+                                    </Button>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -167,17 +164,21 @@ const DrivingService: React.FC = () => {
                                     </div>
                                     <ul className="list-unstyled text-start mb-5 flex-grow-1 px-3">
                                         <li className="mb-3 small"><i
-                                            className="bi bi-check-circle-fill text-danger me-2"></i> Safety Evaluations
+                                            className="bi bi-check-circle-fill text-danger me-2"></i>
+                                            Safety Evaluations
                                         </li>
                                         <li className="mb-3 small"><i
-                                            className="bi bi-check-circle-fill text-danger me-2"></i> Refresher Courses
+                                            className="bi bi-check-circle-fill text-danger me-2"></i>
+                                            Refresher Courses
                                         </li>
                                         <li className="mb-3 small"><i
-                                            className="bi bi-check-circle-fill text-danger me-2"></i> DMV Re-exam Prep
+                                            className="bi bi-check-circle-fill text-danger me-2"></i>
+                                            DMV Re-exam Prep
                                         </li>
                                     </ul>
-                                    <Button variant="dark" className="rounded-pill py-3 fw-bold text-uppercase">Book
-                                        Seniors</Button>
+                                    <Button variant="dark" className="rounded-pill py-3 fw-bold text-uppercase">
+                                        Book Seniors
+                                    </Button>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -195,5 +196,4 @@ const DrivingService: React.FC = () => {
         </div>
     );
 };
-
 export default DrivingService;

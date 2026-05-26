@@ -1,9 +1,7 @@
-//Sitemmap.tsx//
+import React, {FC} from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
-import React, {FC} from 'react';
 
 const Sitemap: FC = () => {
     const sections = [

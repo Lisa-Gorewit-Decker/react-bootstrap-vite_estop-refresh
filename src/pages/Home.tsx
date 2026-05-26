@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
 
 const Home: React.FC = () => {
     return (
@@ -15,8 +15,7 @@ const Home: React.FC = () => {
                     backgroundPosition: 'center',
                     minHeight: '60vh',
                     padding: '2rem !important'
-                }}
-            >
+                }} >
                 <Container>
                     <h1 className="display-4 fw-black text-uppercase mb-3 tracking-wide">
                         ESTOP DRIVING SCHOOL, DMV-APPROVED DRIVING LESSONS IN NOVATO, MARIN & SONOMA COUNTIES
@@ -64,14 +63,12 @@ const Home: React.FC = () => {
                                 <Button
                                     className="btn btn-danger mt-3"
                                     onClick={() => window.location.href = '/teenagers-packages'}
-                                    variant="danger"
-                                >
+                                    variant="danger"  >
                                     LEARN MORE!
                                 </Button>
                             </Card.Body>
                         </Card>
                     </Col>
-                    {/* Adults Card */}
                     <Col md={4}>
                         <Card className="h-100 border-0 text-white bg-primary p-4 shadow-sm text-center">
                             <Card.Body className="d-flex flex-column align-items-center justify-content-between">
@@ -88,8 +85,7 @@ const Home: React.FC = () => {
                                 <Button
                                     className="btn btn-danger mt-3"
                                     onClick={() => window.location.href = '/adults-packages'}
-                                    variant="danger"
-                                >
+                                    variant="danger" >
                                     LEARN MORE!
                                 </Button>
                             </Card.Body>
@@ -121,7 +117,6 @@ const Home: React.FC = () => {
                     </Col>
                 </Row>
             </Container>
-            {/* Slogan Mid-Section */}
             <div className="bg-white py-5">
                 <Container className="text-center">
                     <p className="lead" style={{ maxWidth: '100%', fontWeight: 'bold', textTransform: 'uppercase' }}>

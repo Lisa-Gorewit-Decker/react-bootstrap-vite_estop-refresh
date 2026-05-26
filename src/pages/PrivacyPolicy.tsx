@@ -1,4 +1,4 @@
-// PrivacyPolicy.tsx
+
 import React, { FC } from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -6,14 +6,13 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const PrivacyPolicy: FC = () => {
     const lastUpdated: string = "May 2026";
-
     return (
         <main className="container py-5 my-5">
             <div className="row justify-content-center">
                 <article className="col-lg-10">
                     <header className="mb-5">
-                        <h1 className="display-4 fw-bold mb-4 text-center">Privacy Policy</h1>
-                        <p className="text-muted">Effective Date: {lastUpdated}</p>
+                        <h1 className="display-4 fw-bold mb-4 text-uppercase">Privacy Policy</h1>
+                        <p className="text-muted text-uppercase">Effective Date: {lastUpdated}</p>
                         <div className="border-bottom border-danger border-3 w-25"></div>
                     </header>
 
@@ -25,7 +24,7 @@ const PrivacyPolicy: FC = () => {
                         </p>
                         <ul className="list-group list-group-flush mb-3">
                             <li className="list-group-item bg-transparent px-0">Full name and contact information (Phone/Email).</li>
-                            <li className="list-group-item bg-transparent px-0">California Instructional Permit or Driver's License number.</li>
+                            <li className="list-group-item bg-transparent px-0">California Instructional Permit or Driver&rsquo;s License number.</li>
                             <li className="list-group-item bg-transparent px-0">Residential address for valet pick-up/drop-off services.</li>
                         </ul>
                     </section>

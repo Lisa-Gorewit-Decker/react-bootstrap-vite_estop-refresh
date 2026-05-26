@@ -12,5 +12,5 @@ declare module "*.md";
 declare module "*.ts";
 declare module "*.tsx";
 declare module "*.svg";
-declare module "*.svg";
+declare module "*.ico";
 

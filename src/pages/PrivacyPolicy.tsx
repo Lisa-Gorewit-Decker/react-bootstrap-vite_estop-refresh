@@ -1,4 +1,4 @@
-
+// PrivacyPolicy.tsx
 import React, { FC } from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';

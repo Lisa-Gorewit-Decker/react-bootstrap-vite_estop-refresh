@@ -1,3 +1,5 @@
+// noinspection JSUnusedGlobalSymbols
+
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
@@ -24,6 +26,6 @@ const MainLayout: React.FC = () => {
             <CookieBanner/>
         </div>
     );
-}; // <--- Added the missing closing brace and semicolon here
+};
 
 export default MainLayout;

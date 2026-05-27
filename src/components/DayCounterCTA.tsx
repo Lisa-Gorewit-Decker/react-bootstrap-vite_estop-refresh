@@ -1,3 +1,5 @@
+// noinspection JSUnusedGlobalSymbols
+
 import React, { useState, useEffect } from 'react';
 
 interface DayCounterProps {
@@ -38,5 +40,4 @@ const DayCounterCTA: React.FC<DayCounterProps> = ({ startDateIso, label }) => {
         </div>
     );
 };
-
 export default DayCounterCTA;

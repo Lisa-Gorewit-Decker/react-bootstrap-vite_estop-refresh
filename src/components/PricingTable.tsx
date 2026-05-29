@@ -87,8 +87,8 @@ export const PricingTable: React.FC = () => {
                                             </small>
                                         </div>
                                         <ul className="list-unstyled text-start mb-5" style={{ fontSize: '0.9rem' }}>
-                                            {plan.features.map((feature, i) => (
-                                                <li key={i} className="mb-3 d-flex align-items-center gap-2">
+                                            {plan.features.map((feature) => (
+                                                <li key={feature} className="mb-3 d-flex align-items-center gap-2">
                                                     <CheckCircle2 size={18} style={{ color: '#facc15', flexShrink: 0 }} />
                                                     <span>{feature}</span>
                                                 </li>

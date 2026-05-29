@@ -56,7 +56,7 @@ export const PricingTable: React.FC = () => {
                 </div>
                 <div className="row g-4 justify-content-center">
                     {plans.map((plan, index) => (
-                        <div key={index} className="col-12 col-md-4">
+                        <div key={plan.category} className="col-12 col-md-4">
                             <div
                                 className={`card h-100 border-0 shadow-sm p-4 d-flex flex-column justify-content-between position-relative 
                                 ${ plan.isFeatured ? 'bg-dark text-white' : 'bg-light text-dark'}`}

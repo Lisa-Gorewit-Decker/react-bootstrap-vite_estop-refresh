@@ -4,13 +4,15 @@ import {Container, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
+import heroDriver from '../assets/hero-driver.jpg';
+
 const Home: React.FC = () => {
     return (
         <>
             <div
                 className="text-white text-center d-flex align-items-center justify-content-center"
                 style={{
-                    backgroundImage: 'linear-gradient(rgba(5, 10, 44, 0.25), rgba(5, 10, 44, 0.25)), url("/src/assets/hero-driver.jpg")',
+                    backgroundImage: `linear-gradient(rgba(5, 10, 44, 0.25), rgba(5, 10, 44, 0.25)), url("${heroDriver}")`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     minHeight: '60vh',
@@ -212,7 +214,8 @@ const Home: React.FC = () => {
                 <br />
                 <br />
             </div>
-     )
+        </>
+    );
 };
 export default Home;
 

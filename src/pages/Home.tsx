@@ -1,4 +1,3 @@
-// Home.tsx
 import React from 'react';
 import {Container, Button} from 'react-bootstrap';
 
@@ -11,7 +10,7 @@ const Home: React.FC = () => {
             <div
                 className="text-white text-center d-flex align-items-center justify-content-center"
                 style={{
-                    backgroundImage: 'linear-gradient(rgba(5, 10, 44, 0.25), rgba(5, 10, 44, 0.25)), url("/src/assets/hero-driver.jpg")',
+                    backgroundImage: 'linear-gradient(rgba(5, 10, 44, 0.25), rgba(5, 10, 44, 0.25)), url(".src/assets/hero-driver.jpg")',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     minHeight: '60vh',
@@ -66,7 +65,6 @@ const Home: React.FC = () => {
                     <p className="lead"
                        style={{textAlign: "center", fontWeight: "600", marginRight: '20px', marginLeft: '20px', fontStyle: 'italic'}}>
                        — Tony or T.K. (Teshome Kebere): Licensed Instructor No. 2055001</p>
-
                 </div>
             </Container>
             <hr/>
@@ -80,9 +78,9 @@ const Home: React.FC = () => {
                                        E-STOP DRIVING SCHOOL
                                     </span>
                         </h2>
-                        <h6>
+                        <h5>
                             Professional, Valet Driving Instruction Starting at Your Front Door.
-                        </h6>
+                        </h5>>
                     </div>
                     <div className="g-4 justify-content-center row">
                         <div className="col-md-4">

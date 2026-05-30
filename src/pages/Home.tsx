@@ -1,4 +1,3 @@
-// Home.tsx
 import React from 'react';
 import {Container, Button} from 'react-bootstrap';
 
@@ -213,8 +212,7 @@ const Home: React.FC = () => {
                 <br />
                 <br />
             </div>
-        </>
-    )
+     )
 };
 export default Home;
 

@@ -26,7 +26,7 @@ const NavBar: React.FC = () => {
                     <Nav.Link as={Link} to="/packages">PACKAGES</Nav.Link>
                     <Nav.Link as={Link} to="/schedule">SCHEDULE</Nav.Link>
                     <Nav.Link as={Link} to="/services">SERVICES</Nav.Link>
-                    <Nav.Link as={Link} to="/pricing-table">PRICING</Nav.Link>
+                    <Nav.Link as={Link} to="/contact">CONTACT</Nav.Link>
                     <Nav.Link as={Link} to="/privacy-policy">PRIVACY POLICY</Nav.Link>
                     <Nav.Link as={Link} to="/terms-of-service">TERMS OF SERVICE</Nav.Link>
                     <Nav.Link as={Link} to="/testimonials">TESTIMONIALS</Nav.Link>

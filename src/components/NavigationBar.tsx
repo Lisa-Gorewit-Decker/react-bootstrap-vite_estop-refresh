@@ -22,7 +22,7 @@ export const NavigationBar: React.FC = () => {
                         <Nav.Link as={Link} to="/packages">PACKAGES</Nav.Link>
                         <Nav.Link as={Link} to="/schedule">SCHEDULE</Nav.Link>
                         <Nav.Link as={Link} to="/services">SERVICES</Nav.Link>
-                        <Nav.Link as={Link} to="/pricing-table">PRICING</Nav.Link>
+                        <Nav.Link as={Link} to="/contact">CONTACT</Nav.Link>
                         <Nav.Link as={Link} to="/testimonials">TESTIMONIALS</Nav.Link>
                         <Nav.Link as={Link} to="/blog">BLOG</Nav.Link>
                     </Nav>

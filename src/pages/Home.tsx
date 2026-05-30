@@ -80,7 +80,7 @@ const Home: React.FC = () => {
                         </h2>
                         <h5>
                             Professional, Valet Driving Instruction Starting at Your Front Door.
-                        </h5>>
+                        </h5>
                     </div>
                     <div className="g-4 justify-content-center row">
                         <div className="col-md-4">

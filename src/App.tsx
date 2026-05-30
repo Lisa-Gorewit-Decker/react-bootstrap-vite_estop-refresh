@@ -9,6 +9,7 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import BlogPost from './components/BlogPost';
+import NotFound from './pages/NotFound';
 
 import CookieBanner from "./components/CookieBanner";
 import NavigationBar from './components/NavigationBar';
@@ -40,6 +41,7 @@ const App: React.FC = () => {
                     <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
                     <Route path="/terms-of-service" element={<TermsService/>}/>
                     <Route path="/sitemap" element={<Sitemap/>}/>
+                    <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </main>
             <CookieBanner/>

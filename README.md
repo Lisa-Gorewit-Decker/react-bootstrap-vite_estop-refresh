@@ -71,3 +71,6 @@ export default defineConfig([
   },
 ])
 ```
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a7dba07d-01be-463f-919a-aee2535d6858/deploy-status)](https://app.netlify.com/projects/estop-react-refresh-2026/deploys)
+
+

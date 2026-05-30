@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import '../types';
-import tonyInCar from '../assets/tony-in-car.jpg';
 
 const About: React.FC = () => {
     return (
@@ -58,7 +57,7 @@ const About: React.FC = () => {
                     <Col md={6} className="mb-5 mb-md-0">
                         <div className="rounded shadow-lg overflow-hidden border-4 border-white mb-4">
                             <img
-                                src={tonyInCar}
+                                src="src/assets/tony-in-car.jpg"
                                 alt="Tony in the eStop Training Vehicle"
                                 className="img-fluid w-full" />
                         </div>

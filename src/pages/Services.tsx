@@ -4,6 +4,8 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
+import drivingLesson from '../assets/driving-lesson.jpg';
+
 const DrivingService: React.FC = () => {
     return (
         <div className="bg-white">
@@ -79,7 +81,7 @@ const DrivingService: React.FC = () => {
                         <img
                             className="img-fluid rounded-5 shadow-lg"
                             alt="Driving lesson"
-                            src="src/assets/driving-lesson.jpg"
+                            src={drivingLesson}
                         />
                     </Col>
                 </Row>

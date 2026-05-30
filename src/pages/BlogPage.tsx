@@ -7,7 +7,7 @@ import {
     Button,
     Card
 } from 'react-bootstrap';
-import { BlogPost } from '../types';
+import { BlogPost } from '../types/index';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';

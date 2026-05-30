@@ -1,7 +1,7 @@
 //Contact.tsx
 import React, { FC, useState, ChangeEvent, SubmitEvent } from 'react';
 import { Container } from 'react-bootstrap';
-import { ContactState } from "../types";
+import { ContactState } from "../types/index";
 
 const Contact: FC = () => {
     const [formData, setFormData] = useState<ContactState>({
